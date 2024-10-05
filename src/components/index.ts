@@ -1,0 +1,1 @@
+// Đây là folder dùng chung của các page
