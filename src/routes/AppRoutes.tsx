@@ -10,6 +10,12 @@ const AdminLayout = lazy(() => import('../layouts/pages/admin/AdminLayout'))
 const AdminDashboard = lazy(() => import('../pages/admin/AdminDashboard'))
 const AdminManagerTour = lazy(() => import('../pages/admin/AdminManagerTour'))
 
+{/* Employee Page */ }
+const EmployeeLayout = lazy(() => import('../layouts/pages/employee/EmployeeLayout'))
+const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard'))
+
+{/* Customer Page */ }
+
 {/* Not Found */ }
 const NotFound = lazy(() => import('../pages/NotFound/NotFound'))
 const AppRoutes = () => {
@@ -28,6 +34,15 @@ const AppRoutes = () => {
                         <Route path="manager-tour" element={<AdminManagerTour />} />
                     </Route>
                 </Route>
+
+                {/* Employee Page */}
+                <Route element={<DefaultLayout />}>
+                    <Route path='/employee' element={<EmployeeLayout />}>
+                        <Route path='' element={<EmployeeDashboard />} />
+                    </Route>
+                </Route>
+
+                {/* Customer Page */}
 
                 {/* Not Found */}
                 <Route element={<DefaultLayout />}>
