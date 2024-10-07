@@ -45,12 +45,13 @@ const AppRoutes = () => {
                         <Route path='' element={<EmployeeDashboard />} />
                     </Route>
                 </Route>
-                
+
+                {/* Customer Page */}
+
+                {/* Website */}
                 <Route>
                     <Route path='tour-explore' element={<TourPage/>}/>
                 </Route>
-
-                {/* Customer Page */}
 
                 {/* Not Found */}
                 <Route element={<DefaultLayout />}>
