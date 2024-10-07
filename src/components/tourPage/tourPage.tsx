@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { LuMenu } from "react-icons/lu";
 import { Select } from 'react-daisyui';
 import { SlCalender } from "react-icons/sl";
+import { product1, shape1 } from '../../assets/tour';
 
 const tourPage: React.FC<object> = () => {
 
@@ -19,7 +20,7 @@ const tourPage: React.FC<object> = () => {
                     </div>
                     <div
                         className='bg-contain w-screen h-24 z-10 	'
-                        style={{ backgroundImage: `url(${'/src/assets/tour/shape1.png'})` }}
+                        style={{ backgroundImage: `url(${shape1})` }}
                     >
                     </div>
                 </div>
@@ -46,7 +47,7 @@ const tourPage: React.FC<object> = () => {
                             <div className='flex justify-between space-x-12'>
                                 <div className=' rounded-xl drop-shadow-lg h-96 '>
                                     <div className='relative flex items-center justify-center w-[100%]'>
-                                        <img src={'/src/assets/tour/product1.jpg'} className='rounded-t-xl w-[98%] h-[98%]' alt="" />
+                                        <img src={product1} className='rounded-t-xl w-[98%] h-[98%]' alt="" />
                                         <div className='absolute right-6 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center'>
                                             <SlCalender className='w-6 h-6 mr-2 text-white' />
                                             <p className='text-white font-bold text-lg'>9 Days Tours</p>
@@ -58,7 +59,7 @@ const tourPage: React.FC<object> = () => {
                                 </div>
                                 <div className=' rounded-xl drop-shadow-lg h-96 border border-solid border-red-500'>
                                     <div className='relative w-[47%]'>
-                                        <img src={'/src/assets/tour/product1.jpg'}className='rounded-xl w-full h-full' alt="" />
+                                        <img src={product1} className='rounded-xl w-full h-full' alt="" />
                                         <div className='absolute right-3 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center border border-solid border-red-500'>
                                             <SlCalender className='w-6 h-6 mr-2 text-white' />
                                             <p className='text-white font-bold text-lg'>9 Days Tours</p>
