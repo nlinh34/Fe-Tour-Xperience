@@ -58,7 +58,7 @@ const tourPage: React.FC<object> = () => {
                                 </div>
                                 <div className=' rounded-xl drop-shadow-lg h-96 border border-solid border-red-500'>
                                     <div className='relative w-[47%]'>
-                                        <img src={'/src/assets/tour/product1.jpg'}className='rounded-xl w-full h-full' alt="" />
+                                        <img src={'/src/assets/tour/product1.jpg'} className='rounded-xl w-full h-full' alt="" />
                                         <div className='absolute right-3 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center border border-solid border-red-500'>
                                             <SlCalender className='w-6 h-6 mr-2 text-white' />
                                             <p className='text-white font-bold text-lg'>9 Days Tours</p>
