@@ -17,7 +17,7 @@ const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard
 {/* Customer Page */ }
 
 {/* Not Found */ }
-const NotFound = lazy(() => import('../pages/NotFound/NotFound'))
+const NotFound = lazy(() => import('../pages/404/NotFound'))
 const AppRoutes = () => {
     return (
         <>
