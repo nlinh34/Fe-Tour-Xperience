@@ -14,6 +14,9 @@ const AdminManagerTour = lazy(() => import('../pages/admin/AdminManagerTour'))
 const EmployeeLayout = lazy(() => import('../layouts/pages/employee/EmployeeLayout'))
 const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard'))
 
+{/* Tour Page */}
+const TourPage = lazy(() => import('../components/tourPage/tourPage') )
+
 {/* Customer Page */ }
 
 {/* Not Found */ }
@@ -40,6 +43,10 @@ const AppRoutes = () => {
                     <Route path='/employee' element={<EmployeeLayout />}>
                         <Route path='' element={<EmployeeDashboard />} />
                     </Route>
+                </Route>
+                
+                <Route>
+                    <Route path='tour-explore' element={<TourPage/>}/>
                 </Route>
 
                 {/* Customer Page */}
