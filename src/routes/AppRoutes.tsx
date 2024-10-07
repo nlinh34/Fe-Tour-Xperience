@@ -16,6 +16,10 @@ const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard
 
 {/* Customer Page */ }
 
+
+{/* Tour Page */}
+const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
+
 {/* Not Found */ }
 const NotFound = lazy(() => import('../pages/404/NotFound'))
 const AppRoutes = () => {
@@ -40,6 +44,10 @@ const AppRoutes = () => {
                     <Route path='/employee' element={<EmployeeLayout />}>
                         <Route path='' element={<EmployeeDashboard />} />
                     </Route>
+                </Route>
+                
+                <Route>
+                    <Route path='tour-explore' element={<TourPage/>}/>
                 </Route>
 
                 {/* Customer Page */}
