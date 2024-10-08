@@ -49,7 +49,7 @@ const AppRoutes = () => {
                 {/* Customer Page */}
 
                 {/* Website */}
-                <Route>
+                <Route element={<DefaultLayout />}>
                     <Route path='tour-explore' element={<TourPage/>}/>
                 </Route>
 
@@ -57,6 +57,7 @@ const AppRoutes = () => {
                 <Route element={<DefaultLayout />}>
                     <Route errorElement={<NotFound />} />
                     <Route path="*" element={<NotFound />} />
+                    <Route path="/404" element={<NotFound />} />
                 </Route>
             </Routes>
         </>
