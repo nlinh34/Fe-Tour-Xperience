@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { LuMenu } from "react-icons/lu";
 import { Select } from 'react-daisyui';
 import { SlCalender } from "react-icons/sl";
+import { FaStar } from 'react-icons/fa'
+import { product1, shape1 } from '../../../assets/tour/index';
 
-const tourPage: React.FC<object> = () => {
+const TourPage: React.FC<object> = () => {
+
+    const [rating] = useState(5)
 
     return (
         <div>
@@ -12,14 +16,14 @@ const tourPage: React.FC<object> = () => {
                 <div className=' flex w-screen bg-cover bg-no-repeat h-96 items-end relative '
                     style={{ backgroundImage: "url('https://wallpapershome.com/images/pages/pic_h/10327.jpg')" }}>
                     <div className='flex flex-col items-center absolute text-5xl text-center text-white font-bold inset-[44%] top-1/3'>
-                        TourXplore
+                        TourXeprience
                         <p className='text-lg w-56 font-semibold  mt-2'>
                             <Link className='text-[#e8026a]' to={'/home'}>Home</Link> | Explore for Tour
                         </p>
                     </div>
                     <div
                         className='bg-contain w-screen h-24 z-10 	'
-                        style={{ backgroundImage: `url(${'/src/assets/tour/shape1.png'})` }}
+                        style={{ backgroundImage: `url(${shape1})` }}
                     >
                     </div>
                 </div>
@@ -43,40 +47,46 @@ const tourPage: React.FC<object> = () => {
                                     </Select>
                                 </div>
                             </div>
-                            <div className='flex justify-between space-x-12'>
-                                <div className=' rounded-xl drop-shadow-lg h-96 '>
-                                    <div className='relative flex items-center justify-center w-[100%]'>
-                                        <img src={'/src/assets/tour/product1.jpg'} className='rounded-t-xl w-[98%] h-[98%]' alt="" />
-                                        <div className='absolute right-6 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center'>
-                                            <SlCalender className='w-6 h-6 mr-2 text-white' />
-                                            <p className='text-white font-bold text-lg'>9 Days Tours</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Santorini, Oia
-                                    </div>
-                                </div>
-                                <div className=' rounded-xl drop-shadow-lg h-96 border border-solid border-red-500'>
-                                    <div className='relative w-[47%]'>
-                                        <img src={'/src/assets/tour/product1.jpg'} className='rounded-xl w-full h-full' alt="" />
-                                        <div className='absolute right-3 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center border border-solid border-red-500'>
-                                            <SlCalender className='w-6 h-6 mr-2 text-white' />
-                                            <p className='text-white font-bold text-lg'>9 Days Tours</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        Santorini, Oia
-                                    </div>
-                                </div>
+                            <div className='gap-8 grid grid-cols-2'>
+                            {Array.from({ length: 5 }).map(() => (
+                                 <div className=' rounded-xl drop-shadow-lg border border-solid '>
+                                 <div className='relative flex items-center justify-center w-[100%] '>
+                                     <div className='overflow-hidden w-full h-full rounded-t-xl '>
+                                         <img src={product1} className='rounded-t-xl transition-transform duration-300 hover:scale-110' alt="" />
+                                     </div>
+                                     <div className='absolute right-6 top-[90%] flex w-40 h-12 bg-[#029e9d] rounded-xl items-center justify-center'>
+                                         <SlCalender className='w-6 h-6 mr-2 text-white' />
+                                         <p className='text-white font-bold text-lg'>9 Days Tours</p>
+                                     </div>
+                                 </div>
+                                 <div className='p-5'>
+                                     <p className='text-[#029e9d] font-medium text-lg'>Greece</p>
+                                     <Link to={'/home'} className='text-2xl font-semibold'>Santorini, Oia</Link>
+                                     <div className='flex items-center mt-1'>
+                                         <div className='flex flex-row space-x-1 pt-2 mb-2'>
+                                             {Array.from({ length: 5 }).map((_, index) => (
+                                                 <div key={index}>
+                                                     <FaStar className={`w-4 h-4  ${index < rating ? 'text-yellow-400' : 'text-slate-200'}`} />
+                                                 </div>
+                                             ))}
+                                         </div>
+                                         <p className='ml-2'>(12)</p>
+                                     </div>
+                                     <p className='mt-3 w-[92%] h-24 text-lg font-extralight'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
+                                     <div className='flex items-center mt-1 mb-3'>
+                                         <label className='text-xl font-bold text-[#029e9d]'>$170.00</label>
+                                         <p className='ml-2 font-extralight text-base'>| Per person</p>
+                                     </div>
+                                 </div>
+                             </div>
+                            ))}                            
                             </div>
                         </div>
                     </div>
-
-                    {/* border border-solid border-red-500 */}
                 </div>
             </div>
         </div>
     )
 }
 
-export default tourPage
+export default TourPage
