@@ -17,6 +17,9 @@ const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard
 {/* Customer Page */ }
 
 
+{ /* Home Page */ }
+const HomePage = lazy(() => import('../pages/home-page/HomePage'))
+
 {/* Tour Page */}
 const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
 
@@ -45,6 +48,10 @@ const AppRoutes = () => {
                         <Route path='' element={<EmployeeDashboard />} />
                     </Route>
                 </Route>
+
+                {/* Home Page */}
+
+                <Route path="/home-page" element={<HomePage/>} />
 
                 {/* Customer Page */}
 
