@@ -6,7 +6,7 @@ const NotFound: React.FC<object> = () => {
   return (
     <div>
       <div className="bg-cover bg-center h-screen"
-        style={{ backgroundImage: "url('https://s5.ezgif.com/tmp/ezgif-5-6e2d8a6ce3.jpg')" }}>
+        style={{ backgroundImage: `url('https://s3.ezgif.com/tmp/ezgif-3-cf2c6be7b9.webp')` }}>
         <Hero className='flex justify-center items-center'>
           <Hero.Content className="text-center">
             <div className="">
