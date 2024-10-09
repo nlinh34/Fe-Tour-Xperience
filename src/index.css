@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Font thường dùng*/
+body {
+    font-family: 'Afacad Flux', sans-serif;
+}
+/*Tiêu đề nhỏ*/
+.old-standard-ttt {
+    font-family: 'Old Standard TTT', serif;
+}
+
+/*Tiêu đề lớn*/
+.rozha-one {
+    font-family: 'Rozha One', serif;
+}

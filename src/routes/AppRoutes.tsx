@@ -19,6 +19,7 @@ const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard
 
 {/* Tour Page */}
 const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
+const BookingPage = lazy(() => import('../components/website/booking/booking'))
 
 {/* Not Found */ }
 const NotFound = lazy(() => import('../pages/404/NotFound'))
@@ -51,6 +52,7 @@ const AppRoutes = () => {
                 {/* Website */}
                 <Route element={<DefaultLayout />}>
                     <Route path='tour-explore' element={<TourPage/>}/>
+                    <Route path='booking' element={<BookingPage/>} />
                 </Route>
 
                 {/* Not Found */}
