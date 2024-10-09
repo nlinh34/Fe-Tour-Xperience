@@ -62,7 +62,7 @@ const TourPage: React.FC<object> = () => {
                             </div>
                             <div className='gap-8 grid grid-cols-2'>
                                 {Array.from({ length: 6 }).map(() => (
-                                    <div className=' rounded-xl drop-shadow-lg border border-solid hover:shadow-inner hover:shadow-sm hover:shadow-[#029e9d]'>
+                                    <div className=' rounded-xl drop-shadow-lg border border-solid  hover:shadow-sm hover:shadow-[#029e9d]'>
                                         <div className='relative flex items-center justify-center w-[100%] '>
                                             <div className='overflow-hidden w-full h-full rounded-t-xl '>
                                                 <img src={product1} className='rounded-t-xl transition-transform duration-300 hover:scale-110' alt="" />
