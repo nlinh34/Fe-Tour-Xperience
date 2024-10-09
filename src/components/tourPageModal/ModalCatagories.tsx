@@ -1,6 +1,6 @@
 import React from 'react'
 import { Checkbox } from 'react-daisyui';
-const CatagoriesList: React.FC<object> = () => {
+const ModalCatagories: React.FC = () => {
     const List = [
         {
             name: 'Tour',
@@ -34,7 +34,7 @@ const CatagoriesList: React.FC<object> = () => {
             name: 'Travels',
             number: 92
         },
-    ]
+    ]   
     return (
             <div className='space-y-2 mt-8 pl-1'>
                 {
@@ -56,4 +56,4 @@ const CatagoriesList: React.FC<object> = () => {
     )
 }
 
-export default CatagoriesList
+export default ModalCatagories;

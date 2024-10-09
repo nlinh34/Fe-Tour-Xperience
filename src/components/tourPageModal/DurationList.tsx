@@ -1,6 +1,6 @@
 import React from 'react'
 import { Checkbox } from 'react-daisyui';
-const DurationList: React.FC<object> = () => {
+const DurationList: React.FC = () => {
     const List = [
         {
             name: 'up to 1 hour',

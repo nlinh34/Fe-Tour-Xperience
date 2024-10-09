@@ -5,15 +5,13 @@ import { Select } from 'react-daisyui';
 import { SlCalender } from "react-icons/sl";
 import { FaStar } from 'react-icons/fa'
 import { product1, shape1 } from '../../../assets/tour/index';
-import CatagoriesList from '../../tourPageModal/catagoriesList'
 import DurationList from '../../tourPageModal/DurationList';
 import { FaArrowRightLong } from "react-icons/fa6";
+import ModalCatagories from '../../tourPageModal/ModalCatagories';
 
 const TourPage: React.FC<object> = () => {
 
     const [rating] = useState(5)
-
-
 
     return (
         <div>
@@ -39,9 +37,9 @@ const TourPage: React.FC<object> = () => {
 
                         <div className='w-[27%] pt-2 mr-7 flex flex-col '>
                             <div>
-                                {/* Nav bar filter */}
+                                {/* list bar filter */}
                                 <p className='text-3xl font-[450] p-2 border-b-2 border-solid border-[#029e9d] '>Catagories Type</p>
-                                <CatagoriesList />
+                                <ModalCatagories />
                                 <p className='text-3xl font-[450] p-2 border-b-2 border-solid border-[#029e9d] mt-8'>Duration Type</p>
                                 <DurationList />
                             </div>
