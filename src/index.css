@@ -1,10 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*Font thường dùng*/
+body {
+    font-family: 'Afacad Flux', sans-serif;
+}
+
+/*Tiêu đề*/
+.font-title {
+    font-family: 'Rozha One', serif;
 }
