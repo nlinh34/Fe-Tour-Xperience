@@ -23,6 +23,7 @@ const HomePage = lazy(() => import('../pages/home-page/HomePage'))
 {/* Tour Page */}
 const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
 const BookingPage = lazy(() => import('../components/website/booking/booking'))
+const ServicePage = lazy(() => import('../components/website/servicePage/servicePage'))
 
 {/* Not Found */ }
 const NotFound = lazy(() => import('../pages/404/NotFound'))
@@ -60,6 +61,7 @@ const AppRoutes = () => {
                 <Route element={<DefaultLayout />}>
                     <Route path='tour-explore' element={<TourPage/>}/>
                     <Route path='booking' element={<BookingPage/>} />
+                    <Route path='service' element={<ServicePage/>}/>
                 </Route>
 
                 {/* Not Found */}
