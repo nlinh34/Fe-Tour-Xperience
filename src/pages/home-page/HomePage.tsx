@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="flex  ">
-        <img src={logo} alt="" className="  w-52 h-52 " />
+        <img src={logo} alt="" className="  w-52 h-52 pb-24" />
         <div className="mt-2 items-center justify-center flex gap-10">
           <p>Dịch vụ</p>
           <p>Review</p>
@@ -34,7 +34,7 @@ const HomePage = () => {
    
         </div>
       </div>
-      <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/10/21134417/Kyoto.jpg?tr=w-1366,f-jpg,pr-true" className="w-full h-80 object-cover	"/>
+      <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/10/21134417/Kyoto.jpg?tr=w-1366,f-jpg,pr-true" className="w-full h-80 object-cover "/>
     </div>
   );
 };
