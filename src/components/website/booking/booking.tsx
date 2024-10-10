@@ -1,7 +1,7 @@
 import React from 'react'
 import { shape1 } from '../../../assets/tour'
 import { Link } from 'react-router-dom'
-import { Input, Table } from 'react-daisyui'
+import { Input } from 'react-daisyui'
 import { travel1 } from '../../../assets/img'
 import { RiMapPinLine } from 'react-icons/ri'
 import { FaStar } from 'react-icons/fa'
@@ -23,15 +23,15 @@ const BookingPage: React.FC<object> = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-3 gap-12 mx-40'>
+            <div className='grid grid-cols-3 gap-12 mx-40 '>
                 <div className='col-span-2'>
                     <h1 className='text-2xl font-semibold border-b-[1px] pb-4 '>Thông tin chuyến đi</h1>
                     <h2 className='text-lg font-semibold mt-4'>Thông tin cá nhân</h2>
-                    <form className='mt-2 text-gray-600 flex flex-col gap-3'>
+                    <form className=' mt-2 text-gray-600 flex flex-col gap-3'>
                         <div className='flex flex-col text-lg gap-1'>
                             <label>Họ và tên</label>
-                            <Input
-                                className='w-auto border border-solid border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-gray-400'
+                            <Input 
+                                className=' w-auto border border-solid border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-gray-400'
                                 placeholder='Họ và tên' />
                         </div>
                         <div className='grid grid-cols-2 gap-12'>
@@ -105,9 +105,10 @@ const BookingPage: React.FC<object> = () => {
                     <div className='shadow-md px-8 py-5 rounded-lg'>
                         <div>
                             <p className='font-semibold text-2xl'>Hóa đơn tạm tính</p>
-                            <Table>
-                                <span></span>
-                            </Table>
+                            <div className="grid grid-cols-2 divide-x divide-gray-200 ">
+                                <p className='text-primary'>11</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
