@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <div className="flex  ">
-        <img src={logo} alt="" className="  w-52 h-52 pb-24" />
+        <img src={logo} alt="" className="  w-52 h-52 " />
         <div className="mt-2 items-center justify-center flex gap-10">
           <p>Dịch vụ</p>
           <p>Review</p>
