@@ -1,7 +1,7 @@
 import React from 'react'
 import { shape1 } from '../../../assets/tour'
 import { Link } from 'react-router-dom'
-import { Input } from 'react-daisyui'
+import { Input, Table } from 'react-daisyui'
 import { travel1 } from '../../../assets/img'
 import { RiMapPinLine } from 'react-icons/ri'
 import { FaStar } from 'react-icons/fa'
@@ -50,41 +50,64 @@ const BookingPage: React.FC<object> = () => {
                         </div>
                     </form>
                 </div>
-                <div className='px-8 py-5 shadow-md rounded-lg'>
-                    <div className='w-full flex flex-col gap-6'>
-                        <p className='font-semibold text-2xl'>Chi tiết thông tin đặt chỗ</p>
-                        <div className='flex flex-row gap-5'>
-                            <img src={travel1}
-                                className='w-24 h-24 rounded-md' />
-                            <div>
-                                <div className='flex flex-row gap-2'>
-                                    <div className='flex flex-row gap-1 text-sm text-yellow-400 mt-1'>
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
-                                        <FaStar />
+                <div className='flex flex-col gap-7'>
+                    <div className='px-8 py-5 shadow-md rounded-lg'>
+                        <div className='w-full flex flex-col gap-6'>
+                            <p className='font-semibold text-2xl'>Chi tiết thông tin đặt chỗ</p>
+                            <div className='flex flex-row gap-5'>
+                                <img src={travel1}
+                                    className='w-24 h-24 rounded-md' />
+                                <div>
+                                    <div className='flex flex-row gap-2'>
+                                        <div className='flex flex-row gap-1 text-sm text-yellow-400 mt-1'>
+                                            <FaStar />
+                                            <FaStar />
+                                            <FaStar />
+                                            <FaStar />
+                                            <FaStar />
+                                        </div>
+                                        <p className='text-gray-700'>200 Đánh giá</p>
                                     </div>
-                                    <p className='text-gray-700'>200 Đánh giá</p>
+                                    <p className='font-semibold'>Adriatic Adventure – Zagreb To Athens</p>
+                                    <div className='flex items-center gap-1'>
+                                        <RiMapPinLine className='text-sm text-red-800' />
+                                        <p className='text-red-800 font-semibold'>Croatia</p>
+                                    </div>
                                 </div>
-                                <p className='font-semibold'>Adriatic Adventure – Zagreb To Athens</p>
-                                <div className='flex items-center gap-1'>
-                                    <RiMapPinLine className='text-sm text-red-800' />
-                                    <p className='text-red-800 font-semibold'>Croatia</p>
+                            </div>
+                            <div className='grid grid-cols-2 gap-4'>
+                                <div className='bg-gray-100 px-3 py-2 rounded-lg'>
+                                    <p className='text-gray-500'>Check In</p>
+                                    <p className='font-semibold'>10/10/2024</p>
+                                    <p className='text-gray-500'>15:00 - 22:00</p>
                                 </div>
+                                <div className='bg-gray-100 px-3 py-2 rounded-lg'>
+                                    <p className='text-gray-500'>Check Out</p>
+                                    <p className='font-semibold'>14/10/2024</p>
+                                    <p className='text-gray-500'>01:00 - 10:00</p>
+                                </div>
+                            </div>
+                            <div className='border-t-[1px] pt-3'>
+                                <p className='text-gray-500'>Thời gian ở:</p>
+                                <p className='font-semibold'>3 ngày | 2 đêm</p>
+                                <p className='text-red-800 cursor-pointer hover:underline'>Bạn muốn thay đổi thêm ngày?</p>
+                            </div>
+                            <div className='border-t-[1px] pt-3'>
+                                <p className='text-gray-500'>Phòng đã chọn:</p>
+                                <div className='flex flex-row justify-between'>
+                                    <p className='font-semibold'>Superior Double Rooms</p>
+                                    <p>1 Phòng, 3 Người</p>
+                                </div>
+                                <p className='text-red-800 cursor-pointer hover:underline'>Thay đổi lựa chọn của bạn</p>
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 gap-4'>
-                            <div className='bg-gray-100 px-3 py-2 rounded-lg'>
-                                <p className='text-gray-500'>Check In</p>
-                                <p className='font-semibold'>10/10/2024</p>
-                                <p className='text-gray-500'>15:00 - 22:00</p>
-                            </div>
-                            <div className='bg-gray-100 px-3 py-2 rounded-lg'>
-                                <p className='text-gray-500'>Check Out</p>
-                                <p className='font-semibold'>14/10/2024</p>
-                                <p className='text-gray-500'>01:00 - 10:00</p>
-                            </div>
+                    </div>
+                    <div className='shadow-md px-8 py-5 rounded-lg'>
+                        <div>
+                            <p className='font-semibold text-2xl'>Hóa đơn tạm tính</p>
+                            <Table>
+                                <span></span>
+                            </Table>
                         </div>
                     </div>
                 </div>
