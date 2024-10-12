@@ -1,10 +1,9 @@
 import React from 'react'
 import { shape1 } from '../../../assets/tour'
 import { Link } from 'react-router-dom'
-import { Input } from 'react-daisyui'
 import { travel1 } from '../../../assets/img'
 import { RiMapPinLine } from 'react-icons/ri'
-import { FaStar } from 'react-icons/fa'
+import { FaGrinWink, FaStar } from 'react-icons/fa'
 
 const BookingPage: React.FC<object> = () => {
 
@@ -30,25 +29,85 @@ const BookingPage: React.FC<object> = () => {
                     <form className=' mt-2 text-gray-600 flex flex-col gap-3'>
                         <div className='flex flex-col text-lg gap-1'>
                             <label>Họ và tên</label>
-                            <Input 
-                                className=' w-auto border border-solid border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-gray-400'
-                                placeholder='Họ và tên' />
+                            <input type="text" placeholder="Họ và tên"
+                                className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                            />
                         </div>
                         <div className='grid grid-cols-2 gap-12'>
                             <div className='flex flex-col'>
                                 <label>Email</label>
-                                <Input
-                                    className='w-auto border border-solid border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-gray-400'
-                                    placeholder='Email' />
+                                <input type="text" placeholder="Email"
+                                    className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                                />
                             </div>
                             <div className='flex flex-col'>
                                 <label>Số điện thoại</label>
-                                <Input
-                                    className='w-auto border border-solid border-gray-300 rounded-lg py-2 px-4 focus:outline-none focus:border-gray-400'
-                                    placeholder='Số điện thoại' />
+                                <input type="text" placeholder="Số điện thoại"
+                                    className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                                />
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-2 gap-12'>
+                            <div className='flex flex-col'>
+                                <label>Giới tính</label>
+                                <select className="select select-bordered text-base w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400">
+                                    <option disabled selected>Giới tính</option>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                </select>
+                            </div>
+                            <div className='flex flex-col'>
+                                <label>Ngày sinh</label>
+                                <input type="date" placeholder=""
+                                    className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                                />
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-2 gap-12'>
+                            <div className='flex flex-col'>
+                                <label>Quốc gia</label>
+                                <select className="select select-bordered text-base w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400">
+                                    <option disabled selected>Quốc gia</option>
+                                    <option>Việt Nam</option>
+                                    <option>Nhật Bản</option>
+                                    <option>Trung Quốc</option>
+                                    <option>Hàn Quốc</option>
+                                    <option>Đức</option>
+                                </select>
+                            </div>
+                            <div className='flex flex-col'>
+                                <label>Tỉnh / Thành phố</label>
+                                <select className="select select-bordered text-base w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400">
+                                    <option disabled selected>Tỉnh / Thành phố</option>
+                                    <option>Đồng Nai</option>
+                                    <option>Thành phố Hồ Chí Minh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div className='grid grid-cols-2 gap-12'>
+                            <div className='flex flex-col'>
+                                <label>Địa chỉ 1</label>
+                                <input type="text" placeholder="Địa chỉ 1"
+                                    className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                                />
+                            </div>
+                            <div className='flex flex-col'>
+                                <label>Địa chỉ 2</label>
+                                <input type="text" placeholder='Địa chỉ 2'
+                                    className="input input-bordered w-auto border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                                />
                             </div>
                         </div>
                     </form>
+                    <div className='bg-gray-100 w-full mt-5 p-5 rounded-xl'>
+                        <div className='flex flex-row justify-start gap-3 items-start'>
+                            <FaGrinWink className='text-white bg-red-800 w-20 h-14 p-2 rounded-lg text-5xl' />
+                            <div className=''>
+                                <p className='font-bold text-lg'>Lưu ý:</p>
+                                <p>Bạn có thể hủy vé miễn phí trong vòng 24 tiếng</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='flex flex-col gap-7'>
                     <div className='px-8 py-5 shadow-md rounded-lg'>
