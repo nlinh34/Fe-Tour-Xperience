@@ -8,7 +8,7 @@ import Header from '../../Header'
 const BookingPage: React.FC<object> = () => {
 
     return (
-        <div className='w-full mb-10'>
+        <div className='max-w-screen mx-auto'>
             <Header />
             <TitlePage 
             Title='BOOKING'
