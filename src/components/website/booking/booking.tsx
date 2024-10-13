@@ -3,11 +3,13 @@ import { travel1 } from '../../../assets/img'
 import { RiMapPinLine } from 'react-icons/ri'
 import { FaGrinWink, FaStar } from 'react-icons/fa'
 import TitlePage from '../../Title'
+import Header from '../../Header'
 
 const BookingPage: React.FC<object> = () => {
 
     return (
         <div className='w-full mb-10'>
+            <Header />
             <TitlePage 
             Title='BOOKING'
             SubTitle='Booking'
