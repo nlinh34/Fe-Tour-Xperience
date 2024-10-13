@@ -14,17 +14,14 @@ const AdminManagerTour = lazy(() => import('../pages/admin/AdminManagerTour'))
 const EmployeeLayout = lazy(() => import('../layouts/pages/employee/EmployeeLayout'))
 const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard'))
 
-{/* About Page */ }
-const AboutPage = lazy(() => import('../pages/about/AboutPage'))
+{/* Customer Page */}
 
-
-{ /* Home Page */ }
+{/* Website */}
 const HomePage = lazy(() => import('../pages/home-page/HomePage'))
-
-{/* Tour Page */}
 const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
 const BookingPage = lazy(() => import('../components/website/booking/booking'))
 const ServicePage = lazy(() => import('../components/website/servicePage/servicePage'))
+const AboutPage = lazy(() => import('../pages/about/AboutPage'))
 
 {/* Not Found */ }
 const NotFound = lazy(() => import('../pages/404/NotFound'))
@@ -52,18 +49,17 @@ const AppRoutes = () => {
                     </Route>
                 </Route>
 
+                {/* Customer */}
+
                 {/* Home Page */}
-
                 <Route path="/home-page" element={<HomePage/>} />
-
-                {/* About Page */}
-                <Route path="/aboutpage" element={<AboutPage/>} />
 
                 {/* Website */}
                 <Route element={<DefaultLayout />}>
                     <Route path='tour-explore' element={<TourPage/>}/>
                     <Route path='booking' element={<BookingPage/>} />
                     <Route path='service' element={<ServicePage/>}/>
+                    <Route path='about-page' element={<AboutPage/>} />
                 </Route>
 
                 {/* Not Found */}
