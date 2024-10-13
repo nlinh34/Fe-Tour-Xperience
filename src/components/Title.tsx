@@ -20,7 +20,7 @@ const TitlePage: React.FC<TitlePageProps> = ({
         <div className='absolute inset-0 flex flex-col justify-center items-center gap-3'>
           <p className=' text-white text-center text-7xl font-title'>{Title}</p>
           <div className='flex gap-3 text-center text-xl'>
-            <Link to='/home' className='text-red-400'>Home</Link>
+            <Link to='/home' className='text-teal-500'>Home</Link>
             <p className='text-white'> | </p>
             <Link to='' className='text-white'>{SubTitle}</Link>
           </div>
