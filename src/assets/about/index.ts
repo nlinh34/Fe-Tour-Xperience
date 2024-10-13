@@ -1,0 +1,36 @@
+    export { default as capy2 } from './capy2.webp'
+    export { default as capy1 } from './capy1.webp'
+    export { default as capy3 } from './capy3.webp'
+    export { default as capy4 } from './capy4.webp'
+    export { default as chup } from './chup.jpg'
+    export { default as hehe } from './hehe.jpg'
+    export { default as load } from './load.jpg'
+    export { default as logo } from './logo.png'
+    export { default as sky } from './sky.jpg'
+    export { default as sleep } from './sleep.jpg'
+    export { default as tongtong } from './tongtong.jpg'
+    export { default as travel1 } from './travel.png'
+    export { default as travel2 } from './travel2.png'
+    export { default as cl1 } from './cl-1.png'
+    export { default as cl2 } from './cl-2.png'
+    export { default as cl3 } from './cl-3.png'
+    export { default as cl4 } from './cl-4.png'
+    export { default as cl5 } from './cl-5.png'
+     export { default as gau } from './gau.webp'
+     export { default as gau2 } from './gau2.webp'
+     export  { default as gau3 } from './gau3.webp'
+     export { default as gau4 } from './gau4.webp'
+     export { default as gau5 } from './gau5.webp'
+     export { default as gau6 } from './gau6.webp'
+     export { default as gau7 } from './gau7.webp'
+     export { default as gau8 } from './gau8.webp'
+     export { default as gau9 } from './gau9.webp'
+     export { default as gau10 } from './gau10.webp'
+     export { default as gau11 } from './gau11.webp'
+     export { default as logow } from './logo-white.png'
+
+
+
+
+        
+        
