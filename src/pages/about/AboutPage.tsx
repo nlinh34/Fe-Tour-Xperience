@@ -2,11 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import { capy2, capy1, capy3,chup, hehe, logo, sky, sleep, tongtong, travel1, travel2, cl1, cl2, cl3, cl4, cl5, gau, gau2, gau3, gau4, gau5, gau6,gau7, logow } from '../../assets/about/index';
 
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faMapMarkerAlt, faClock, faUserTie, faDollarSign, faBox, faComments, faMapMarkerAlt as faMapMarkerAltSolid, faHeart, faShieldAlt, faQuoteLeft, faChevronLeft, faChevronRight, faSearch } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faTwitter, faInstagram, faCcMastercard, faCcPaypal, faCcStripe, faCcVisa, faCcDiscover, faCcAmex } from '@fortawesome/free-brands-svg-icons';
-
 const Counter: React.FC<{ end: number, duration: number }> = ({ end, duration }) => {
   const [count, setCount] = React.useState(0);
   const ref = useRef<HTMLHeadingElement>(null);
@@ -123,22 +118,20 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto flex justify-between items-center px-4">
           <div className="flex items-center space-x-4">
             <span className="flex items-center space-x-2">
-              <FontAwesomeIcon icon={faCalendarAlt} />
+              
               <span>Thursday, Mar 26, 2021</span>
             </span>
             <span className="flex items-center space-x-2">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              
               <span>Hollywood, America</span>
             </span>
             <span className="flex items-center space-x-2">
-              <FontAwesomeIcon icon={faClock} />
+              
               <span>Mon-Fri: 10 AM - 5 PM</span>
             </span>
           </div>
           <div className="flex space-x-4">
-            <FontAwesomeIcon icon={faFacebookF} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faInstagram} />
+
           </div>
         </div>
       </header>
@@ -156,7 +149,7 @@ const AboutPage: React.FC = () => {
             <li className="hover:text-teal-500"><a href="/blog">Blog</a></li>
           </ul>
           <div className="flex space-x-4 items-center">
-            <FontAwesomeIcon icon={faSearch} className="transform transition-transform duration-200 active:scale-95" />
+           
             <button className="text-teal-500 transform transition-transform duration-200 active:scale-95">Login/Register</button>
             <button className="bg-teal-500 text-white px-4 py-2 rounded transform transition-transform duration-200 active:scale-95">Book Now</button>
           </div>
@@ -182,15 +175,15 @@ const AboutPage: React.FC = () => {
             <p className="mt-4 text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div className="mt-6 flex space-x-4">
               <span className="flex items-center space-x-2 transform transition-transform duration-200 active:scale-95 hover:text-teal-500">
-                <FontAwesomeIcon icon={faUserTie} className="text-teal-500" />
+               
                 <span>Tour Guide</span>
               </span>
               <span className="flex items-center space-x-2 transform transition-transform duration-200 active:scale-95 hover:text-teal-500">
-                <FontAwesomeIcon icon={faDollarSign} className="text-teal-500" />
+                
                 <span>Friendly Price</span>
               </span>
               <span className="flex items-center space-x-2 transform transition-transform duration-200 active:scale-95 hover:text-teal-500">
-                <FontAwesomeIcon icon={faBox} className="text-teal-500" />
+                
                 <span>Reliable Tour Package</span>
               </span>
             </div>
@@ -229,25 +222,25 @@ const AboutPage: React.FC = () => {
         <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         <div className="grid grid-cols-4 gap-8">
           <div className="bg-white shadow-lg p-6 rounded transform transition-transform duration-300 hover:translate-y-[-10px] hover:bg-teal-500 hover:text-white">
-            <FontAwesomeIcon icon={faComments} className="text-teal-600 text-3xl mb-4" />
+           
             <h3 className="text-xl font-bold mb-2">Tell Us What You Want To Do</h3>
             <p className="text-gray-600 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             <p className="text-teal-600">100+ Reviews</p>
           </div>
           <div className="bg-white shadow-lg p-6 rounded transform transition-transform duration-300 hover:translate-y-[-10px] hover:bg-teal-500 hover:text-white">
-            <FontAwesomeIcon icon={faMapMarkerAltSolid} className="text-teal-600 text-3xl mb-4" />
+          
             <h3 className="text-xl font-bold mb-2">Share Your Travel Locations</h3>
             <p className="text-gray-600 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             <p className="text-teal-600">100+ Reviews</p>
           </div>
           <div className="bg-white shadow-lg p-6 rounded transform transition-transform duration-300 hover:translate-y-[-10px] hover:bg-teal-500 hover:text-white">
-            <FontAwesomeIcon icon={faHeart} className="text-teal-600 text-3xl mb-4" />
+            
             <h3 className="text-xl font-bold mb-2">Share Your Travel Preference</h3>
             <p className="text-gray-600 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             <p className="text-teal-600">100+ Reviews</p>
           </div>
           <div className="bg-white shadow-lg p-6 rounded transform transition-transform duration-300 hover:translate-y-[-10px] hover:bg-teal-500 hover:text-white">
-            <FontAwesomeIcon icon={faShieldAlt} className="text-teal-600 text-3xl mb-4" />
+           
             <h3 className="text-xl font-bold mb-2">Here 100% Trusted Tour Agency</h3>
             <p className="text-gray-600 mb-4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             <p className="text-teal-600">100+ Reviews</p>
@@ -316,15 +309,15 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
             <p className="text-gray-600 mt-4 text-center md:text-left max-w-lg">
-              <FontAwesomeIcon icon={faQuoteLeft} className="text-teal-500 mr-2" />
+              
               {testimonials[currentTestimonial].text}
             </p>
             <div className="flex mt-4">
               <button onClick={handlePrev} className="bg-teal-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-2">
-                <FontAwesomeIcon icon={faChevronLeft} />
+              
               </button>
               <button onClick={handleNext} className="bg-teal-500 text-white rounded-full w-10 h-10 flex items-center justify-center">
-                <FontAwesomeIcon icon={faChevronRight} />
+              
               </button>
             </div>
           </div>
@@ -361,7 +354,7 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="absolute flex justify-center items-center pointer-events-none">
             <div className="bg-white bg-opacity-75 px-10 py-3 rounded-full shadow-lg flex items-center">
-              <FontAwesomeIcon icon={faInstagram} className="text-pink-600 mr-2" />
+              
               <span className="font-semibold text-gray-800 whitespace-nowrap">Follow On Instagram</span>
             </div>
           </div>
@@ -421,12 +414,7 @@ const AboutPage: React.FC = () => {
         <div className="container mx-auto max-w-screen-xl flex justify-between items-center">
           <div className="flex items-center space-x-4 ml-7">
             <span className="text-white">We Support:</span>
-            <FontAwesomeIcon icon={faCcMastercard} className="text-white text-2xl" />
-            <FontAwesomeIcon icon={faCcPaypal} className="text-white text-2xl" />
-            <FontAwesomeIcon icon={faCcStripe} className="text-white text-2xl" />
-            <FontAwesomeIcon icon={faCcVisa} className="text-white text-2xl" />
-            <FontAwesomeIcon icon={faCcDiscover} className="text-white text-2xl" />
-            <FontAwesomeIcon icon={faCcAmex} className="text-white text-2xl" />
+            
           </div>
           <div className="flex space-x-2 mr-8">
             <div className="bg-white text-black rounded-md px-6 py-2 text-lg">English</div>
