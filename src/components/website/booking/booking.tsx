@@ -1,27 +1,17 @@
 import React from 'react'
-import { shape1 } from '../../../assets/tour'
-import { Link } from 'react-router-dom'
 import { travel1 } from '../../../assets/img'
 import { RiMapPinLine } from 'react-icons/ri'
 import { FaGrinWink, FaStar } from 'react-icons/fa'
+import TitlePage from '../../Title'
 
 const BookingPage: React.FC<object> = () => {
 
     return (
         <div className='w-full mb-10'>
-            <div className="relative h-[450px] bg-cover bg-no-repeat"
-                style={{ backgroundImage: "url('https://wallpapershome.com/images/pages/pic_h/10327.jpg')" }}>
-                <div className="absolute inset-0 bg-black opacity-65 filter brightness-75"></div>
-                <img src={shape1} className='absolute w-screen h-32 bottom-0' />
-                <div className='absolute inset-0 flex flex-col justify-center items-center gap-3'>
-                    <p className=' text-white text-center text-7xl font-title'>BOOKING</p>
-                    <div className='flex gap-3 text-center text-xl'>
-                        <Link to='/home' className='text-red-400'>Home</Link>
-                        <p className='text-white'> | </p>
-                        <Link to='/booking' className='text-white'>Booking</Link>
-                    </div>
-                </div>
-            </div>
+            <TitlePage 
+            Title='BOOKING'
+            SubTitle='Booking'
+            />
             <div className='grid grid-cols-3 gap-12 mx-40 '>
                 <div className='col-span-2'>
                     <h1 className='text-2xl font-semibold border-b-[1px] pb-4 '>Thông tin chuyến đi</h1>
