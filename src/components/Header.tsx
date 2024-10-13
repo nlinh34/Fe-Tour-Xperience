@@ -24,10 +24,10 @@ const Header: React.FC<object> = () => {
                         <p className='text-2xl text-pink-800 font-extrabold'>TOURXPERIENCE</p>
                     </div>
                     <div className='flex flex-row gap-10 text-lg'>
-                        <Link to='/home-page' className='hover:text-red-700 transition duration-700'>TRANG CHỦ</Link>
+                        <Link to='/home' className='hover:text-red-700 transition duration-700'>TRANG CHỦ</Link>
                         <Link to='/location' className='hover:text-red-700 transition duration-700'>ĐỊA ĐIỂM</Link>
                         <Link to='/service' className='hover:text-red-700 transition duration-700'>DỊCH VỤ</Link>
-                        <Link to='/about-page' className='hover:text-red-700 transition duration-700'>VỀ CHÚNG TÔI</Link>
+                        <Link to='/about-us' className='hover:text-red-700 transition duration-700'>VỀ CHÚNG TÔI</Link>
                         <div className="relative group">
                             <div>
                                 <Link

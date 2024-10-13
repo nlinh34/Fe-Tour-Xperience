@@ -1,4 +1,4 @@
-import { lazy } from "react"
+import { lazy, Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
 import DefaultLayout from "../layouts/pages/DefaultLayout"
 
@@ -14,11 +14,11 @@ const AdminManagerTour = lazy(() => import('../pages/admin/AdminManagerTour'))
 const EmployeeLayout = lazy(() => import('../layouts/pages/employee/EmployeeLayout'))
 const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard'))
 
-{/* Customer Page */}
+{/* Customer Page */ }
 
-{/* Website */}
+{/* Website */ }
 const HomePage = lazy(() => import('../pages/home-page/HomePage'))
-const TourPage = lazy(() => import('../components/website/tourPage/tourPage') )
+const TourPage = lazy(() => import('../components/website/tourPage/tourPage'))
 const BookingPage = lazy(() => import('../components/website/booking/booking'))
 const ServicePage = lazy(() => import('../components/website/servicePage/servicePage'))
 const AboutPage = lazy(() => import('../pages/about/AboutPage'))
@@ -27,7 +27,7 @@ const AboutPage = lazy(() => import('../pages/about/AboutPage'))
 const NotFound = lazy(() => import('../pages/404/NotFound'))
 const AppRoutes = () => {
     return (
-        <>
+        <Suspense>
             <Routes>
                 {/* Landing Page */}
                 <Route element={<DefaultLayout />}>
@@ -52,14 +52,14 @@ const AppRoutes = () => {
                 {/* Customer */}
 
                 {/* Home Page */}
-                <Route path="/home-page" element={<HomePage/>} />
 
                 {/* Website */}
                 <Route element={<DefaultLayout />}>
-                    <Route path='tour-explore' element={<TourPage/>}/>
-                    <Route path='booking' element={<BookingPage/>} />
-                    <Route path='service' element={<ServicePage/>}/>
-                    <Route path='about-page' element={<AboutPage/>} />
+                    <Route path="/home" element={<HomePage />} />
+                    <Route path='/tour-explore' element={<TourPage />} />
+                    <Route path='/booking' element={<BookingPage />} />
+                    <Route path='/service' element={<ServicePage />} />
+                    <Route path='/about-us' element={<AboutPage />} />
                 </Route>
 
                 {/* Not Found */}
@@ -69,7 +69,7 @@ const AppRoutes = () => {
                     <Route path="/404" element={<NotFound />} />
                 </Route>
             </Routes>
-        </>
+        </Suspense>
     )
 }
 
