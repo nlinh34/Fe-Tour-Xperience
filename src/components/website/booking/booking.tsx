@@ -93,7 +93,7 @@ const BookingPage: React.FC<object> = () => {
                     </form>
                     <div className='bg-gray-100 w-full mt-5 p-5 rounded-xl'>
                         <div className='flex flex-row justify-start gap-3 items-start'>
-                            <FaGrinWink className='text-white bg-red-800 w-20 h-14 p-2 rounded-lg text-5xl' />
+                            <FaGrinWink className='text-white bg-teal-500 w-20 h-14 p-2 rounded-lg text-5xl' />
                             <div className=''>
                                 <p className='font-bold text-lg'>Lưu ý:</p>
                                 <p>Bạn có thể hủy vé miễn phí trong vòng 24 tiếng</p>
@@ -121,8 +121,8 @@ const BookingPage: React.FC<object> = () => {
                                     </div>
                                     <p className='font-semibold'>Adriatic Adventure – Zagreb To Athens</p>
                                     <div className='flex items-center gap-1'>
-                                        <RiMapPinLine className='text-sm text-red-800' />
-                                        <p className='text-red-800 font-semibold'>Croatia</p>
+                                        <RiMapPinLine className='text-sm text-teal-500' />
+                                        <p className='text-teal-500 font-semibold'>Croatia</p>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@ const BookingPage: React.FC<object> = () => {
                             <div className='border-t-[1px] pt-3'>
                                 <p className='text-gray-500'>Thời gian ở:</p>
                                 <p className='font-semibold'>3 ngày | 2 đêm</p>
-                                <p className='text-red-800 cursor-pointer hover:underline'>Bạn muốn thay đổi thêm ngày?</p>
+                                <p className='text-teal-500 cursor-pointer hover:underline'>Bạn muốn thay đổi thêm ngày?</p>
                             </div>
                             <div className='border-t-[1px] pt-3'>
                                 <p className='text-gray-500'>Phòng đã chọn:</p>
@@ -149,7 +149,7 @@ const BookingPage: React.FC<object> = () => {
                                     <p className='font-semibold'>Superior Double Rooms</p>
                                     <p>1 Phòng, 3 Người</p>
                                 </div>
-                                <p className='text-red-800 cursor-pointer hover:underline'>Thay đổi lựa chọn của bạn</p>
+                                <p className='text-teal-500 cursor-pointer hover:underline'>Thay đổi lựa chọn của bạn</p>
                             </div>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ const BookingPage: React.FC<object> = () => {
                         <div>
                             <p className='font-semibold text-2xl'>Hóa đơn tạm tính</p>
                             <div className="grid grid-cols-2 divide-x divide-gray-200 ">
-                                <p className='text-primary'>11</p>
+                                <p className=''>11</p>
                             </div>
 
                         </div>
