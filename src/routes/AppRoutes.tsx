@@ -14,7 +14,8 @@ const AdminManagerTour = lazy(() => import('../pages/admin/AdminManagerTour'))
 const EmployeeLayout = lazy(() => import('../layouts/pages/employee/EmployeeLayout'))
 const EmployeeDashboard = lazy(() => import('../pages/employee/EmployeeDashboard'))
 
-{/* Customer Page */ }
+{/* About Page */ }
+const AboutPage = lazy(() => import('../pages/about/AboutPage'))
 
 
 { /* Home Page */ }
@@ -55,7 +56,8 @@ const AppRoutes = () => {
 
                 <Route path="/home-page" element={<HomePage/>} />
 
-                {/* Customer Page */}
+                {/* About Page */}
+                <Route path="/aboutpage" element={<AboutPage/>} />
 
                 {/* Website */}
                 <Route element={<DefaultLayout />}>
