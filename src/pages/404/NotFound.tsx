@@ -1,12 +1,13 @@
 import React from 'react'
 import { Button, Hero } from 'react-daisyui'
 import { Link } from 'react-router-dom'
+import { img404 } from '../../assets/img'
 
 const NotFound: React.FC<object> = () => {
   return (
     <div>
       <div className="bg-cover bg-center h-screen"
-        style={{ backgroundImage: `url('https://s3.ezgif.com/tmp/ezgif-3-cf2c6be7b9.webp')` }}>
+        style={{ backgroundImage: `url(${img404})` }}>
         <Hero className='flex justify-center items-center'>
           <Hero.Content className="text-center">
             <div className="">
