@@ -4,15 +4,16 @@ import { RiMapPinLine } from 'react-icons/ri'
 import { FaGrinWink, FaStar } from 'react-icons/fa'
 import TitlePage from '../../Title'
 import Header from '../../Header'
+import TabPayment from './TabPayment'
 
 const BookingPage: React.FC<object> = () => {
 
     return (
-        <div className='max-w-screen mx-auto'>
+        <div className='max-w-screen mx-auto mb-10'>
             <Header />
-            <TitlePage 
-            Title='BOOKING'
-            SubTitle='Booking'
+            <TitlePage
+                Title='BOOKING'
+                SubTitle='Booking'
             />
             <div className='grid grid-cols-3 gap-12 mx-40 '>
                 <div className='col-span-2'>
@@ -99,6 +100,10 @@ const BookingPage: React.FC<object> = () => {
                                 <p>Bạn có thể hủy vé miễn phí trong vòng 24 tiếng</p>
                             </div>
                         </div>
+                    </div>
+                    <div className='mt-2'>
+                        <h1 className='text-2xl font-semibold'>Bạn muốn thanh toán bằng?</h1>
+                        <TabPayment />
                     </div>
                 </div>
                 <div className='flex flex-col gap-7'>
