@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { shape1 } from "../../assets/tour";
 import { FaMapMarkerAlt, FaHeart, FaShieldAlt } from "react-icons/fa";
 import { FaComments } from "react-icons/fa";
 import {
@@ -11,11 +10,7 @@ import {
   SiAmericanexpress,
 } from "react-icons/si";
 import {
-  FaClock,
-  FaFacebookF,
-  FaTwitter,
   FaInstagram,
-  FaSearch,
   FaUserTie,
   FaDollarSign,
   FaBox,
@@ -25,8 +20,6 @@ import {
 } from "react-icons/fa";
 
 import {
-  logo,
-  sky,
   travel1,
   travel2,
   cl1,
@@ -48,6 +41,8 @@ import {
   fourteen,
   fifteen,
 } from "../../assets/about/index";
+import Header from "../../components/Header";
+import TitlePage from "../../components/Title";
 
 const Counter: React.FC<{ end: number; duration: number }> = ({
   end,
@@ -169,79 +164,11 @@ const AboutPage: React.FC = () => {
 
   return (
     <div>
-      <header className="bg-teal-500 text-white py-2 animate-fadeIn">
-        <div className="container mx-auto flex justify-between items-center px-4">
-          <div className="flex items-center space-x-4">
-            <span className="flex items-center space-x-2">
-              <FaClock />
-              <span>Thursday, Mar 26, 2021</span>
-            </span>
-            <span className="flex items-center space-x-2">
-              <FaMapMarkerAlt />
-              <span>Hollywood, America</span>
-            </span>
-            <span className="flex items-center space-x-2">
-              <FaClock />
-              <span>Mon-Fri: 10 AM - 5 PM</span>
-            </span>
-          </div>
-          <div className="flex space-x-4">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaInstagram />
-          </div>
-        </div>
-      </header>
-      <nav className="bg-white shadow-md animate-slideIn">
-        <div className="container mx-auto flex justify-between items-center py-4 px-4">
-          <div className="flex items-center space-x-2">
-            <img src={logo} alt="Logo" />
-          </div>
-          <ul className="flex space-x-6">
-            <li className="hover:text-teal-500">
-              <a href="/">Home</a>
-            </li>
-            <li className="hover:text-teal-500">
-              <a href="/about">About Us</a>
-            </li>
-            <li className="hover:text-teal-500">
-              <a href="/destinations">Destinations</a>
-            </li>
-            <li className="hover:text-teal-500">
-              <a href="/tours">Tours</a>
-            </li>
-            <li className="hover:text-teal-500">
-              <a href="/pages">Pages</a>
-            </li>
-            <li className="hover:text-teal-500">
-              <a href="/blog">Blog</a>
-            </li>
-          </ul>
-          <div className="flex space-x-4 items-center">
-            <FaSearch className="transform transition-transform duration-200 active:scale-95" />
-            <button className="text-teal-500 transform transition-transform duration-200 active:scale-95">
-              Login/Register
-            </button>
-            <button className="bg-teal-500 text-white px-4 py-2 rounded transform transition-transform duration-200 active:scale-95">
-              Book Now
-            </button>
-          </div>
-        </div>
-      </nav>
-
-      <section
-        className="relative bg-cover bg-center h-96"
-        style={{ backgroundImage: `url(${sky})` }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <img src={shape1} className="absolute w-screen h-32 bottom-0" />
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-          <h1 className="text-4xl font-bold">ABOUT US</h1>
-          <p className="mt-4">
-            <span className="text-teal-500">Home</span> | About Us
-          </p>
-        </div>
-      </section>
+      <Header />
+      <TitlePage
+        Title='ABOUT US'
+        SubTitle='About Us'
+      />
 
       <section className="bg-white py-20">
         <div className="container mx-auto flex px-4">

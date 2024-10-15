@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { shape1 } from '../../../assets/tour'
 import { BsFlag } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 import { SlDirections } from "react-icons/sl";
 import { SlCompass } from "react-icons/sl";
+import Header from '../../Header';
+import TitlePage from '../../Title';
 
 const servicePage: React.FC<object> = () => {
 
@@ -29,19 +30,11 @@ const servicePage: React.FC<object> = () => {
 
     return (
         <div>
-            <div className="relative h-[450px] bg-cover bg-no-repeat"
-                style={{ backgroundImage: "url('https://wallpapershome.com/images/pages/pic_h/10327.jpg')" }}>
-                <div className="absolute inset-0 bg-black opacity-65 filter brightness-75"></div>
-                <img src={shape1} className='absolute w-screen h-32 bottom-0' />
-                <div className='absolute inset-0 flex flex-col justify-center items-center gap-3'>
-                    <p className=' text-white text-center text-7xl font-title'>BOOKING</p>
-                    <div className='flex gap-3 text-center text-xl'>
-                        <Link to='/home' className='text-red-400'>Home</Link>
-                        <p className='text-white'> | </p>
-                        <Link to='/booking' className='text-white'>Booking</Link>
-                    </div>
-                </div>
-            </div>
+            <Header />
+                <TitlePage 
+                Title='SERVICE'
+                SubTitle='Service'
+                />
             <div className="flex justify-center flex-col">
                 <div className='text-center'>
                     <p className='text-[#FBD037] text-2xl font-medium'>Core Of The Perfect Tour</p>

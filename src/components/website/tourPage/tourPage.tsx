@@ -4,10 +4,12 @@ import { LuMenu } from "react-icons/lu";
 import { Select } from 'react-daisyui';
 import { SlCalender } from "react-icons/sl";
 import { FaStar } from 'react-icons/fa'
-import { product1, shape1 } from '../../../assets/tour/index';
+import { product1} from '../../../assets/tour/index';
 import DurationList from '../../tourPageModal/DurationList';
 import { FaArrowRightLong } from "react-icons/fa6";
 import ModalCatagories from '../../tourPageModal/ModalCatagories';
+import Header from '../../Header';
+import TitlePage from '../../Title';
 
 const TourPage: React.FC<object> = () => {
 
@@ -16,22 +18,11 @@ const TourPage: React.FC<object> = () => {
     return (
         <div>
             <div>
-                <div className=' flex w-screen bg-cover bg-no-repeat h-96 items-end relative'
-                    style={{ backgroundImage: "url('https://wallpapershome.com/images/pages/pic_h/10327.jpg')" }}>
-                    <div className='flex flex-col items-center absolute text-5xl text-center text-white font-bold inset-[44%] top-1/3'>
-                        TourXeprience
-                        <p className='text-lg w-56 font-semibold mt-2'>
-                            <Link className='text-[#e8026a]' to={'/home'}>Home</Link> | Explore for Tour
-                        </p>
-                    </div>
-                    <div
-                        className='bg-contain w-screen h-24 z-10'
-                        style={{ backgroundImage: `url(${shape1})` }}
-                    >
-                    </div>
-                </div>
-                
-
+                <Header />
+                <TitlePage 
+                Title='TOUR XPLORE'
+                SubTitle='Tour Xplore'
+                />
                 <div className='flex justify-center items-center flex-col mt-2'>
                     <div className='w-[70%] flex '>
 
