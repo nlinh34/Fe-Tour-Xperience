@@ -9,7 +9,7 @@ const TabPayment: React.FC<object> = () => {
         setActiveTab(tab)
     }
     return (
-        <div>
+        <div className='max-w-screen mx-auto'>
             <div className='flex flex-row gap-3 mt-3'>
                 <button
                     onClick={() => handleTabClick('tab1')}
@@ -60,8 +60,8 @@ const TabPayment: React.FC<object> = () => {
                                     />
                                 </div>
                             </div>
-                            <div className='mt-4'>
-                                <img src={card} alt="" />
+                            <div className='mt-4 flex justify-center items-center'>
+                                <img src={card} alt="" className='w-full h-auto object-contain' style={{ maxHeight: '150px' }}  />
                             </div>
                         </div>
                     </div>

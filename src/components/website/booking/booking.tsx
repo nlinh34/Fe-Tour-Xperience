@@ -104,6 +104,19 @@ const BookingPage: React.FC<object> = () => {
                     <div className='mt-2'>
                         <h1 className='text-2xl font-semibold'>Bạn muốn thanh toán bằng?</h1>
                         <TabPayment />
+                        <div className='border border-dashed mt-9' />
+                        <div className='flex flex-row justify-between mt-3'>
+                            <div className=' flex flex-row gap-2 items-center'>
+                                <input type="checkbox" />
+                                <p className='text-gray-600'>
+                                    Bằng việc tiếp tục, bạn đã đồng ý với Chính sách và điều khoản của chúng tôi
+                                </p>
+
+                            </div>
+                            <button className="px-12 py-2 rounded-xl bg-teal-500 text-white font-semibold text-xl hover:bg-yellow-300 cursor-pointer">
+                                Xác Nhận
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col gap-7'>
@@ -161,10 +174,48 @@ const BookingPage: React.FC<object> = () => {
                     <div className='shadow-md px-8 py-5 rounded-lg'>
                         <div>
                             <p className='font-semibold text-2xl'>Hóa đơn tạm tính</p>
-                            <div className="grid grid-cols-2 divide-x divide-gray-200 ">
-                                <p className=''>11</p>
+                            <div className="mt-3 mb-2">
+                                <table className='min-w-full border border-gray-300'>
+                                    <tbody className='divide-y divide-gray-200'>
+                                        <tr>
+                                            <td className='px-4 py-2 font-medium'>Chi phí phòng</td>
+                                            <td className='px-4 py-2'>$500.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='px-4 py-2 font-medium'>Số người</td>
+                                            <td className='px-4 py-2'>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='px-4 py-2 font-medium'>Thuế</td>
+                                            <td className='px-4 py-2'>$50.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='px-4 py-2 font-medium'>Phí đặt phòng</td>
+                                            <td className='px-4 py-2'>Miễn phí</td>
+                                        </tr>
+                                        <tr className='bg-sky-950 text-white'>
+                                            <td className='px-4 py-2 font-bold'>Tổng tiền</td>
+                                            <td className='px-4 py-2 font-bold'>$550.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-
+                        </div>
+                    </div>
+                    <div className='shadow-md px-8 py-5 rounded-lg'>
+                        <h1 className='font-semibold text-2xl'>Lịch sử thanh toán</h1>
+                        <div className='flex flex-row justify-between text-lg mt-1 text-gray-500'>
+                            <p>Trước khi ở bạn cần thanh toán</p>
+                            <p>$40.00</p>
+                        </div>
+                    </div>
+                    <div className='shadow-md px-8 py-5 rounded-lg'>
+                        <h1 className='font-semibold text-2xl'>Mã giảm giá (Nếu có)</h1>
+                        <div className='flex flex-col justify-center gap-2 mt-3 text-lg text-gray-500'>
+                            <input type="text"
+                                className="input input-bordered w-full border border-solid border-gray-300 focus:outline-none focus:border-gray-400"
+                            />
+                            <button className='bg-sky-950 text-white rounded-lg py-2 hover:bg-yellow-300 w-auto'>Sử dụng mã</button>
                         </div>
                     </div>
                 </div>
